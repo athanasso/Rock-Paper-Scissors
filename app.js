@@ -51,34 +51,34 @@ const game = () => {
         }
         else if(player == 'rock'){
             if(computer == 'paper'){
-                result.textContent = 'Computer Won';
+                result.textContent = 'Enemy Won';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
  
             }else{
-                result.textContent = 'Player Won'
+                result.textContent = 'You Won'
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if(player == 'scissors'){
             if(computer == 'rock'){
-                result.textContent = 'Computer Won';
+                result.textContent = 'Enemy Won';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }else{
-                result.textContent = 'Player Won';
+                result.textContent = 'You Won';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if(player == 'paper'){
             if(computer == 'scissors'){
-                result.textContent = 'Computer Won';
+                result.textContent = 'Enemy Won';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }else{
-                result.textContent = 'Player Won';
+                result.textContent = 'You Won';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
@@ -113,7 +113,7 @@ const game = () => {
         else{
             result.style.fontSize = '2rem';
             result.innerText = 'Tie';
-            result.style.color = 'grey'
+            result.style.color = 'white'
         }
         reloadBtn.innerText = 'Restart';
         reloadBtn.style.display = 'flex'
